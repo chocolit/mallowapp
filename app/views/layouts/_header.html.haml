@@ -19,7 +19,7 @@
           %a{ :href => request_path }= t 'nav.log_in'
     - if user_signed_in?
       .pull-right
-        %label= t "nav.nickname", :nickname => current_user.nickname
+        %label{ :style => ('display: block' if user_signed_in?) }= t "nav.nickname", :nickname => current_user.nickname
     - else
       .pull-right
         %label= t 'nav.label'

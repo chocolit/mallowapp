@@ -14,7 +14,7 @@ en:
     page_title: "mallowapp · get unfollowers."
     intro_1: "Get mail about who unfollowed you on Twitter."
     intro_2: "A simple and beautiful mail service that delivers daily insights on who unfollowed you on Twitter swiftly to your inbox."
-    request_btn: "Request Invite"
+    request_btn: "Request an invite"
     feedback_btn: "Submit Feedback"
     thanks_1: "Thank you, there are %{wait} people currently on the waitlist."
     thanks_2: "Your invite will be sent to <em>%{email}</em> when it's ready."
