@@ -34,12 +34,12 @@ module ApplicationHelper
     user_followers.flatten!
     unfollower_status =
       if user_followers.include?(id)
-        content_tag(:span, "You Follow", :class => 'status', :style => "font-size:0.8em;line-height:2em;color:#fff;padding:2px 5px;text-transform:uppercase;background-color:#6cd4ff;border-radius:3px;")
+        content_tag(:span, "Following", :class => 'status', :style => "font-size:0.8em;line-height:2em;color:#6cd4ff;")
       else
-        content_tag(:span, "Don't Follow", :class => 'status', :style => "font-size:0.8em;line-height:2em;color:#777;padding:2px 5px;text-transform:uppercase;background-color:#EEE;border-radius:3px;")
+        content_tag(:span, "Not Following", :class => 'status', :style => "font-size:0.8em;line-height:2em;color:#999;")
       end
     details = 
-      content_tag(:li, handle, :class => 'handle', :style => "line-height:1.3em;-webkit-font-smoothing:antialiased;list-style:none;color:#444;") +
+      content_tag(:li, handle, :class => 'handle', :style => "line-height:1.3em;-webkit-font-smoothing:antialiased;list-style:none;font-weight:400;color:#444;") +
       unfollower_status
     content_tag(:img, nil, :src => src, :class => 'avatar', :style => style) +
     content_tag(:ul, details, :style => "padding:0;margin:0 1em 0 0;vertical-align:top;display:inline-block;")
@@ -68,9 +68,9 @@ module ApplicationHelper
     current_user_followers.flatten!
     unfollower_status =
       if current_user_followers.include?(id)
-        content_tag(:span, "You Follow", :class => 'status following')
+        content_tag(:span, "Following", :class => 'status following')
       else
-        content_tag(:span, "Don't Follow", :class => 'status')
+        content_tag(:span, "Not Following", :class => 'status')
       end
     details =
       content_tag(:span, handle, :class => 'handle') +
