@@ -1,4 +1,4 @@
-- title(t 'name')
+- title(t 'home.page_title')
 
 - if user_signed_in? && current_user.waitlist? && current_user.email?
   - # User signed in but is on waitlist
@@ -24,7 +24,8 @@
 
 - else
   - # User not signed in
-  %p= raw(t 'home.intro_1')
+  %h2= t 'home.intro_1'
+  %p= raw(t 'home.intro_2')
 
   = form_tag(request_path) do
     = submit_tag(t 'home.request_btn')

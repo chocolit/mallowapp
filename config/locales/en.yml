@@ -1,8 +1,19 @@
 # Mallowapp localization file for English.
 en:
   name: mallowapp
+  nav:
+    feedback: Feedback
+    log_in: Log in
+    log_out: Log out
+    settings: Settings
+    admin: Admin
+    request: Request
+    label: Private Beta
+    nickname: "@%{nickname}"
   home:
-    intro_1: "A simple and beautiful mail service that delivers daily insights on who unfollowed you on Twitter swiftly to your inbox."
+    page_title: "mallowapp · get unfollowers."
+    intro_1: "Get mail about who unfollowed you on Twitter."
+    intro_2: "A simple and beautiful mail service that delivers daily insights on who unfollowed you on Twitter swiftly to your inbox."
     request_btn: "Request Invite"
     feedback_btn: "Submit Feedback"
     thanks_1: "Thank you, and have a pleasant day!"
