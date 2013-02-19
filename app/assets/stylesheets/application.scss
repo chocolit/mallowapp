@@ -210,6 +210,24 @@ strong {
   font-weight: bold;
 }
 
+section {
+  position: relative;
+}
+
+aside {
+  max-width: 280px;
+}
+
+#phone {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 309px;
+  height: 211px;
+  background: url(../assets/phone.png) no-repeat;
+  background-size: 309px 211px;
+}
+
 footer {
   @include clearfix;
   font-size: 14px;
@@ -585,7 +603,7 @@ input[type="submit"] {
     width: 300px;
   }
 
-  nav ul, nav label { display: none; }
+  nav ul, nav label, #phone { display: none; }
 
   input[type="submit"] {
     width: 100%;
