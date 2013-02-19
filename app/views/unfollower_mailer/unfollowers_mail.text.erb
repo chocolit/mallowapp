@@ -1,7 +1,7 @@
 Mallow
 ======
 
-<%= @user.unfollowers.count %> unfollowers.
+You have <%= @user.unfollowers.count %> unfollowers.
 
 <% @user.unfollowers.each do |id| %>
 @<%= Twitter.user(id).screen_name %>

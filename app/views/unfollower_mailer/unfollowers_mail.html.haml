@@ -9,7 +9,7 @@
 
     %div{ :style => "background:#fff;padding:0 2.3em 0em 2.3em;font-size:17px;font-weight:300;color:#444;" }
       %p 
-        %h2{ :style => "color:#222;font-size:22px;line-height:1.15em;margin-bottom:1em;font-weight:700;" } #{ @user.unfollowers.count } unfollowers.
+        %h2{ :style => "color:#222;font-size:22px;line-height:1.15em;margin-bottom:1em;font-weight:700;" } You have #{ @user.unfollowers.count } unfollowers.
 
     %div{ :style => "background:#fff;padding:0 2.3em 0em 2.3em;font-size:17px;font-weight:300;color:#444;" }
       - @user.unfollowers.each do |id|
