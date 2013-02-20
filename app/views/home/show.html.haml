@@ -19,6 +19,7 @@
     - if current_user.unfollowers.count == 0
       %p.none= t 'home.placeholder'
     - else
+      %h2= unfollowers_counter(current_user)
       - current_user.unfollowers.each do |id|
         = unfollower_link(id)
 

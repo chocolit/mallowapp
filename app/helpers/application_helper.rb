@@ -127,4 +127,10 @@ module ApplicationHelper
     content_tag :ul, (active_user_ticker + active_user_daily_opt_out_ticker + inactive_user_ticker + mail_sent_ticker), :class => 'stats'
   end
 
+  def unfollowers_counter(user)
+    text = (user.unfollowers.count == 1) ? "unfollower" : "unfollowers"
+    counter = "You have #{ user.unfollowers.count } #{ text }."
+    counter
+  end
+
 end
