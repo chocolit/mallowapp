@@ -46,7 +46,7 @@ module ApplicationHelper
   end
 
   def mailer_unfollower_link(id, options={})
-    link_to mailer_unfollower_details(:normal, id, options), "http://twitter.com/#{Twitter.user(id).screen_name}", :target => '_blank', :style => "display:inline-block;text-decoration:none;"
+    link_to(mailer_unfollower_details(:normal, id, options), "http://twitter.com/#{Twitter.user(id).screen_name}", :target => '_blank', :style => "display:inline-block;text-decoration:none;") + "</br>".html_safe
   end
 
   # Can return four different sizes from Twitter API
